@@ -37,20 +37,27 @@ const Home = () => {
   const [currentWord, setCurrentWord] = useState("");
   const [wordShowing, setWordShowing] = useState("");
   const [wordClass, setWordClass] = useState("german");
-
-  const defaultWordsArray = words.map(w => ({...w}));
-  let wordsArray = [] as Array<Word>;
-
-  if (typeof window !== 'undefined') {
-    wordsArray = (
-      JSON.parse(localStorage.getItem('wordsArray') ?? '') || defaultWordsArray
-    ) as Array<Word>;
-  } else {
-    wordsArray = defaultWordsArray;
-  }
-
   const [nextButtonShowing, setNextButtonShowing] = useState(true);
   const [newPriority, setNewPriority] = useState(1);
+
+  const defaultWordsArray = words.map(w => ({...w}));
+  let wordsArray = defaultWordsArray;
+
+  if (typeof window !== 'undefined') {
+    const storedWordsArray = localStorage.getItem('wordsArray');
+    
+    if (storedWordsArray) {
+      try {
+        const parsedArray = JSON.parse(storedWordsArray);
+
+        if (Array.isArray(parsedArray) && parsedArray.length > 0) {
+          wordsArray = parsedArray;
+        }
+      } catch (error) {
+        console.error('Error parsing stored words array:', error);
+      }
+    }
+  }
 
   useEffect(() => {
     const newWord = chooseRandomWord(wordsArray);
