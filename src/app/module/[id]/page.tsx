@@ -113,19 +113,40 @@ const Page = ({ params }: { params: { id: string } }) => {
 
   return (
     <div id="pageContainer">
-      <div id="cardContainer" onClick={clickCard}>
-        <div className={cardClass}>{cardShowing}</div>
+      <div
+        id="pageTopContainer"
+        onClick={clickCard}
+        style={{
+          cursor: cardClass === "german" ? "help" : "default"
+        }}
+      >
+        <div id="cardContainer">
+          <div className={cardClass}>{cardShowing}</div>
+        </div>
       </div>
-      <div id="emojiContainer">
-        {emojis.map((emoji, index) => (
-          <span key={index} onClick={() => clickEmoji(emoji.multiplier)}>{emoji.symbol}</span>
-        ))}
-      </div>
-      <div onClick={chooseNewCard} id="nextButton" style={{visibility: nextButtonShowing ? "visible" : "hidden"}}>
-        Next
-      </div>
-      <div>
-        <Link href='/'>Home</Link>
+      <div id="pageBottomContainer">
+        <div id="emojiContainer">
+          {emojis.map((emoji, index) => (
+            <span
+              key={index}
+              className="emoji"
+              onClick={() => clickEmoji(emoji.multiplier)}
+            >
+              {emoji.symbol}
+            </span>
+          ))}
+        </div>
+        <div id="nextButtonContainer">
+          <div onClick={chooseNewCard} id="nextButton" style={{
+            visibility: nextButtonShowing ? "visible" : "hidden",
+            cursor: nextButtonShowing ? "pointer" : "none"
+          }}>
+            Next
+          </div>
+        </div>
+        <div id="homeButtonContainer">
+          <Link href='/'>Home</Link>
+        </div>
       </div>
     </div>
   );

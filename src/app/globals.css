@@ -17,13 +17,32 @@ html, body {
   background-color: #000000;
 }
 
-#wordContainer {
+#pageTopContainer {
+  display: flex;
+  flex-direction: column;
+  height: 66%;
+  align-items: center;
+  justify-content: center;
+}
+
+#pageBottomContainer {
+  display: flex;
+  flex-direction: column;
+  height: 33%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  padding-block-end: 2em;
+}
+
+#cardContainer {
   display: flex;
   flex-direction: row;
-  width: 90vw;
+  width: 60vw;
   justify-content: center;
   align-items: center;
-  font-size: 3em;
+  text-align: center;
+  font-size: 1.5em;
   font-weight: 600;
 }
 
@@ -34,6 +53,14 @@ html, body {
   justify-content: center;
   align-items: center;
   font-size: 3em;
+}
+
+.emoji {
+  cursor: default;
+}
+
+.emoji:active {
+  transform: translateY(-4px);
 }
 
 #nextButton {
