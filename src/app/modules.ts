@@ -1,5 +1,5 @@
 import { parsePromptResponseTest } from "./helpers";
-import { Word } from "./types";
+import { Card } from "./types";
 
 
 const vocabularyText = `die Gaste = the guests\n
