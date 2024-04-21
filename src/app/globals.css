@@ -47,3 +47,8 @@ html, body {
 .english {
   color: lightblue;
 }
+
+a {
+  color: palevioletred;
+  text-decoration: none;
+}
