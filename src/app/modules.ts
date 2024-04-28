@@ -131,11 +131,28 @@ Sind Umweltprobleme dir wichtig? = Ich glaube das die wichtigste probleme ist Ko
 Wie werden wir "grüner" in der Zukunft? = In der Zukunft können wir Solaranlagen für Energie installieren und sie nicht nutzen fossile Brennstoffe. Wir können auch Druckerpatronen, Kopierpatronen und Papier recycleren zu Abfall reduzieren.\n
 Welche freiwillige Arbeit willst du machen? = Ich bin freiwilliger in einem Tafelladen für die Hausfreigen und auch Bienenkorb im Schulgarten hatte. Ich denke freiwillige ist sehr wichtig weil es die welt hilft.\n`
 
+const theme1Text =`Erzähl mir von dir. = Mein Geburtstag ist am einundzwanzigsten auf Februar. Als ich junger war, war ich blöd und unreif aber jetzt bin ich sehr weiße und ziemlich klug.\n
+Wie verstehst du dich mit deine familie? = Als kind, ich habe mich nicht gut mit mein Bruder, aber jetzt wir sind untrennbar denn er ist netter.\n
+Was machst du dieses Wochenende mit deiner Familie? = Ich werde am wochenende nach Frankreich mit meine schwester und mutter denn ich liebe französische kulture.\n
+Was machst du normalerweise mit deinen Freunden? = Wenn das wetter schön ist spiele ich basketball aber wenn das wetter schlecht ist spiele ich tischtennis.\n
+Was hast du letzten Samstag gemacht? = Letzten Samstag habe ich fußball gespielt. Es hat keinen spaß gemacht und das Wetter schlecht war und ich würde lieber ins kino gehen.\n
+Was machst du gern in deiner Freizeit? = Als ich junger war, war ich sehr sportlich aber jetzte bin ich denke studieren ist wichtige. Mein Freunde würde sagen das ich klug bin.\n
+Wie findest du das Internet? = Ich mas das Internet denn es ist spaßig und interessant. Ein vorteil ist dass das Internet hast viele informacion aber ein nachteile ist es ist gefährlich.\n
+Was für Musik hörst du gern? = Als ich jünger war, war meine lieblingsmusik Punk, aber jetzt höre ich gern Hip-Hop Musik weil ich glaube es ist schon und ich liebe die Rap Musikers.\n
+Was wirst du heute Abend essen? = Ich werde heute Abend Pizza essen denn ich denke Pizza ist sehr lecker. Als kinde, mein lieblingsgericht war Obst denn es ist gesund.\n
+Was ist dein Lieblingsfest? Warum? = Mein Lieblingsfest ist Weihnachten. Das fest ist am fünfundzwanzig auf Dezember. Es ist mein lieblingsfest denn es verbringen gern Zeit mit familie.\n
+Was hast du an deinem letzten Geburtstag gemacht? = Am meinem letztes Geburstag habe ich Wasserball gespielt. Es hat spaß gemacht denn ich spiele gern Wasserball. Für meinen nächsten Geburtstag würde ich lieber mehr freunden treffen.\n`
+
 const modules = [
   {
-    id: '1',
+    id: '0',
     title: 'Vocabulary',
     cards: parsePromptResponseTest(vocabularyText)
+  },
+  {
+    id: '1',
+    title: 'Theme 1: Identity and Culture',
+    cards: parsePromptResponseTest(theme1Text)
   },
   {
     id: '2',
