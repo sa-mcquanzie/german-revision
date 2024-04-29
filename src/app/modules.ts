@@ -131,7 +131,7 @@ Sind Umweltprobleme dir wichtig? = Ich glaube das die wichtigste probleme ist Ko
 Wie werden wir "grüner" in der Zukunft? = In der Zukunft können wir Solaranlagen für Energie installieren und sie nicht nutzen fossile Brennstoffe. Wir können auch Druckerpatronen, Kopierpatronen und Papier recycleren zu Abfall reduzieren.\n
 Welche freiwillige Arbeit willst du machen? = Ich bin freiwilliger in einem Tafelladen für die Hausfreigen und auch Bienenkorb im Schulgarten hatte. Ich denke freiwillige ist sehr wichtig weil es die welt hilft.\n`
 
-const theme1Text =`Erzähl mir von dir. = Mein Geburtstag ist am einundzwanzigsten auf Februar. Als ich junger war, war ich blöd und unreif aber jetzt bin ich sehr weiße und ziemlich klug.\n
+const theme1Text = `Erzähl mir von dir. = Mein Geburtstag ist am einundzwanzigsten auf Februar. Als ich junger war, war ich blöd und unreif aber jetzt bin ich sehr weiße und ziemlich klug.\n
 Wie verstehst du dich mit deine familie? = Als kind, ich habe mich nicht gut mit mein Bruder, aber jetzt wir sind untrennbar denn er ist netter.\n
 Was machst du dieses Wochenende mit deiner Familie? = Ich werde am wochenende nach Frankreich mit meine schwester und mutter denn ich liebe französische kulture.\n
 Was machst du normalerweise mit deinen Freunden? = Wenn das wetter schön ist spiele ich basketball aber wenn das wetter schlecht ist spiele ich tischtennis.\n
@@ -142,6 +142,18 @@ Was für Musik hörst du gern? = Als ich jünger war, war meine lieblingsmusik P
 Was wirst du heute Abend essen? = Ich werde heute Abend Pizza essen denn ich denke Pizza ist sehr lecker. Als kinde, mein lieblingsgericht war Obst denn es ist gesund.\n
 Was ist dein Lieblingsfest? Warum? = Mein Lieblingsfest ist Weihnachten. Das fest ist am fünfundzwanzig auf Dezember. Es ist mein lieblingsfest denn es verbringen gern Zeit mit familie.\n
 Was hast du an deinem letzten Geburtstag gemacht? = Am meinem letztes Geburstag habe ich Wasserball gespielt. Es hat spaß gemacht denn ich spiele gern Wasserball. Für meinen nächsten Geburtstag würde ich lieber mehr freunden treffen.\n`
+
+const theme3Text = `Was ist dein Lieblingsfach? = Mein Lieblingsfach ist Musik. Als Kind, war mein Lieblingsfach Deutsch denn ich liebe internationale kulture.\n
+Wirst du eine Klassenfahrt machen? = Ja, ich werde USA gehen. Es wird total toll sein. Ich freue mich sehr darauf, weil ich Amerikanische Musik und Essen liebe.\n
+Beschrieb deinen Stundenplan. = Der Schultag beginnt im halb acht uhr und endet um drei. Meiner Meinung nach ist der Schultag zu lang und wenn ich die chance hatte, würde in die startzeit ändern.\n
+Was trägst du zur Schule? = Ich trage normalerweise ein blaue hemd und rose rock zur Schule. Ich hasse mich schuluniform aber ich mochte mich schuluniform in der Grundschule. In der grundschule trage ich einen schwarzen kapuzenpulli und eine weiße hose.\n
+Was sind die Schulregeln? = Man muss in Klassen nicht sprechen. Ein positiv ist ich lerne mehr.\n
+Beschrieb deine Schule. = Meine schule heisst Borough Academy. Meiner meinung nach ist meine schule manchmal stressig aber oft spaßig. Ich würde meine schule empfehlen denn es gibt gut lerhrer.\n
+Welchen Erfolg hast du dieses Jahr gefeiert? = Ich habe dieses jahr gute prüfung teilgenommen meine eltern waren sehr glücklich. Nachtest jahr, will ich junge Musiker des jahres gewinnen.\n
+Wie findest du die Schulregeln? = Meine meinung nach sind die Schulregeln sehr stressig weil sie zu streng sind. Schulregeln in die Grundschule war weniger streng.\n
+Hast du eine Klassenfahrt gemacht? = Ja, wir haben Deutschland besucht. Für mich war die Klassenfahrt stressig weil ich habe mein pass verlosen! Aber ich liebe Klassenfahrt, und du?\n
+Was möchtest du nach den Prüfungen machen? = Ich möchte nach den Prüfungen in Europa fahren denn ich liebe Europas modestil. Wenn ich reich wäre, möchte ich ein Flugzeug zu fliegen lernen.\n
+`
 
 const modules = [
   {
@@ -158,6 +170,11 @@ const modules = [
     id: '2',
     title: 'Theme 2: Local Area, Holiday and Travel',
     cards: parsePromptResponseTest(theme2Text)
+  },
+  {
+    id: '3',
+    title: 'Theme 3: School',
+    cards: parsePromptResponseTest(theme3Text)
   },
   {
     id: '5',
