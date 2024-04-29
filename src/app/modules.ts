@@ -155,6 +155,17 @@ Hast du eine Klassenfahrt gemacht? = Ja, wir haben Deutschland besucht. Für mic
 Was möchtest du nach den Prüfungen machen? = Ich möchte nach den Prüfungen in Europa fahren denn ich liebe Europas modestil. Wenn ich reich wäre, möchte ich ein Flugzeug zu fliegen lernen.\n
 `
 
+const theme4text = `Was ist dir wichtig im Leben? = Als ich junger war, war Geld am wichtigsten, aber jetzt Familie und Freunde sind lieber wichtig, aber meine Mutter denkt dass Gluck wichtig ist.\n
+Ist es wichtig, Sprachen zu lernen? Was kann man machen, wenn man Deutsch sprechen kann? = Es ist sehr wichtig sprachen zu lernen denn man kann neue leute kennenlernen. Als ich jünger war, war es nie wichtig Sprachen zu lernen.\n
+Was möchtest du in der Zukunft haben? = Die Trauben hängen noch, aber ich mochte viele kinder haben denn geld ist mir nicht wichtig.\n
+Hast du einen Teilzeitjob? = Ja ich habe einen Teilzeitjob. Ich arbeite als ein Tierartzhelferin. Ich finde meinem Teilzeitjob wunderbar weil es Tieren hilft. Meinem Teilzeitjob wird vorteilhaft sein, weil ich Tierartz werden will. \n
+Was möchtest du als Job in der Zukunft haben? = Ich mochte in der Zunkunft als Musiker Produzent und es wäre mein Traumberuf, weil ich es liebe, Musik zu machen\n
+Was macht man bei der Arbeit? = Bei der Arbeit muss ich einundzwanzig stunden pro woche arbeiten. Ich muss kunden in einem Restaurant bedieren und das finde ich stressig und öde.\n
+Hast du ein Praktikum gemacht? Was musstest du beim Praktikum machen? = Ja, ich habe ein praktikum gemacht! Denn um mein traumberuf realisieren, musste ich Praktikum als ein Baumeister machen.\n
+Wie war das Praktikum? = Beim Praktikum, musste ich einunddreißig stunden pro woche arbeiten. Ich musste bauen und das Praktikum war nüzlich denn ich lerne nüzlich fähigkeiten.\n
+Was wolltest du als Kind werden? = Als kind war, war ich will ein Clown denn ich habe es war sehr lustig gedenkt.\n
+Was ist dein Traumberuf / Was möchtest du am liebsten als Beruf machen? Warum? = Mein Traumberuf ist ein nuklearphysiker denn es ist ziemlich coole und interessant. Manche leute sagen dass um erfolgreich zu sein muss ich sehr klug sein aber dass ist total falsch!\n`
+
 const modules = [
   {
     id: '0',
