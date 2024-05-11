@@ -8,7 +8,7 @@ const Page = async () => {
 
   return (
     <div id="pageContainer">
-      {subjects.map((subject) => (
+      {subjects?.map((subject) => (
         <div key={subject.id} >
           <Link href={`/subject/${subject.id}`}>{subject.name}</Link>
         </div>

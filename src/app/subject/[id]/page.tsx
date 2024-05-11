@@ -11,7 +11,7 @@ const Page = async ({ params }: { params: { id: string } }) => {
 
   return (
     <div id="pageContainer">
-      {mods.map((mod) => (
+      {mods?.map((mod) => (
         <div key={mod.id} >
           <Link href={`/module/${mod.id}`}>{mod.name}</Link>
         </div>
