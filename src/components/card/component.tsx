@@ -1,8 +1,8 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
-import { redirect, useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 
 interface CardPageParams {
   moduleId: string
@@ -46,6 +46,8 @@ export const CardPage = ({ moduleId, prompt, answer }: CardPageParams) => {
     setNewPriority(multiplier)
   }
 
+  const parsedCard = cardShowing.replace(/(\*)([^\*\*]*)(\*)/g, `<span class="highlighted-text">$2</span>`)
+
   return (
     <div id='pageContainer'>
       <div
@@ -56,7 +58,7 @@ export const CardPage = ({ moduleId, prompt, answer }: CardPageParams) => {
         }}
       >
         <div id='cardContainer'>
-          <div className={cardClass}>{cardShowing}</div>
+          <div className={cardClass} dangerouslySetInnerHTML={{__html: parsedCard}}/>
         </div>
       </div>
       <div id='pageBottomContainer'>
