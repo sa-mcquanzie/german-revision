@@ -1,20 +1,20 @@
-'use client'
+import { createClient } from '@/utils/supabase/server'
+import Link from 'next/link'
 
-import styles from "./page.module.css";
-import modules from "./modules";
-import Link from "next/link";
+const Page = async () => {
+  const supabase = createClient()
 
-const Home = () => {
+  const { data: subjects } = await supabase.from('subject').select()
 
   return (
     <div id="pageContainer">
-      {modules.map((mod) => (
-        <div key={mod.id} >
-          <Link href={`/module/${mod.id}`}>{mod.title}</Link>
+      {subjects.map((subject) => (
+        <div key={subject.id} >
+          <Link href={`/subject/${subject.id}`}>{subject.name}</Link>
         </div>
       ))}
     </div>
   );
 }
 
-export default Home;
+export default Page
